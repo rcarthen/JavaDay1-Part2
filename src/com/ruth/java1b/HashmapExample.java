@@ -28,10 +28,14 @@ public class HashmapExample {
 			System.out.println(entry.getKey()+ " this account belongs to  " + entry.getValue());
 		}
 		
+		///call account deposit method print the values again from the hashmap... the map should print updated values
+		
 		// credit account of "103" by 10 & check for a non existing account
 		
 		System.out.println(acct1.deposit("103", acctHashMap));
 		System.out.println(acct1.deposit("107", acctHashMap));
+		
+		acct1.displayAccount(acctHashMap);
 		
 		
 	}
